@@ -1,0 +1,137 @@
+
+
+html{
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif; 
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0px; 
+	
+}
+
+.spacer{
+	width: 100%; 
+	padding: 10px; 
+}
+
+#image-viewer{
+	height: 100%;
+	width: 100%; 	
+	z-index: 20; 
+	visibility: hidden; 
+	position: absolute;
+	display: flex; 
+	justify-content: center; 
+	
+}
+
+#image-xmark{ 
+	margin-right: 10px;
+	transition: color 0.5s; 
+}
+
+#image-xmark:hover{
+	color: red; 
+	cursor: pointer; 
+	
+}
+
+#viewed-image{
+	position: relative; 
+	top: 0px;
+	margin: auto; 
+	
+}
+
+#page-body{
+	width: 100%;
+	height: 100%
+	
+}
+
+#hero{
+	width: 100%; 
+	height: 45%; 
+	display: flex; 
+	align-content: center; 
+}
+
+
+
+
+
+#back-home{
+	background-color: #80bfff; 
+	color: white; 
+	padding: 5px 10px; 
+	position: absolute; 
+	top: 50px; 
+	left: 0px; 
+	border-radius: 0px 10px 10px 0px; 
+	opacity: 1;
+}
+
+#back-home:hover{
+	padding-left: 40px; 
+	transition: padding-left 0.5s; 
+	cursor: pointer; 
+	
+}
+
+#foreword{
+	width: 40%; 
+	height: 80%; 
+	max-width: 800px; 
+	min-width: 500px; 
+	border-radius: 20px;
+	margin: auto; 
+	text-align: center; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+	
+}
+
+#foreword-title{
+	margin: 0px 0px;  
+	text-transform: uppercase;
+	padding: 5px 0px; 
+	background-color: #80bfff; 
+	border-radius: 20px 20px 0px 0px; 
+	
+}
+
+#foreword-body{
+	display: flex; 
+	flex-direction: column; 
+	justify-content: space-evenly; 	
+}
+
+#foreword-text{
+	margin: 20px; 
+	text-align: justify; 
+	text-indent: 50px;
+	
+}
+
+#commissions-gallery{
+	min-height: 55%; 
+	width: 100%; 
+	background-color: #80bfff; 
+	display: flex; 
+	flex-wrap: wrap; 
+	gap: 10px; 
+	justify-content: center; 
+	align-content: start; 
+	
+}
+
+
+.gallery-image{
+	transition: top 0.5s; 
+	top: 0px; 	
+	position: relative;
+	border-radius: 25px;
+}

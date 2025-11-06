@@ -1,0 +1,30 @@
+---todo
+
+screen resizing 
+	using setTimeout
+	window.top on resize
+
+category expansion 
+	using setTimeout
+
+character design groups
+image generation
+	flex wrapped	
+
+x buttons
+	transition-property + transition-duration 
+
+contacts links 
+commissions link + comissions page
+
+category title modal script 
+
+image viewer
+
+scroll to categories
+	using body and negative input from top 
+
+---done
+
+html foundation
+
