@@ -39,6 +39,7 @@ body{
 	margin: 0px; 
 	position: relative;
 	top: 0px; 
+	overflow: hidden; 
 }
 
 #page-body{
