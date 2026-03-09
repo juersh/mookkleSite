@@ -48,7 +48,7 @@
 				<div id="illustration-gallery" class="gallery">
 					<?php
 					    // 1. Define the directory
-					    $dir = 'images/';
+					    $dir = '../pics/';
 					
 					    // 2. Define supported image formats
 					    $formats = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
@@ -62,8 +62,8 @@
 					            $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
 					            if (in_array($ext, $formats)) {
 					                // 5. Output the HTML for each image
-					                echo '<div class="gallery-item">';
-					                echo '<img src="' . $dir . $file . '" alt="' . $file . '">';
+					                echo '<div class="gallery-container">';
+					                echo '<img class="gallery-image" src="' . $dir . $file . '" alt="' . $file . '">';
 					                echo '</div>';
 					            }
 					        }
