@@ -48,7 +48,7 @@
 				<div id="illustration-gallery" class="gallery">
 					<?php
 					    // 1. Define the directory
-					    $dir = '../pics/';
+					    $dir = '../pics/illustration';
 					
 					    // 2. Define supported image formats
 					    $formats = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
@@ -103,6 +103,32 @@
 					</h2>
 				</div>
 				<div id="sculpting-gallery" class="gallery">
+					<?php
+					    // 1. Define the directory
+					    $dir = '../pics/sculpting';
+					
+					    // 2. Define supported image formats
+					    $formats = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+					
+					    // 3. Scan the directory
+					    if (is_dir($dir)) {
+					        $files = scandir($dir);
+					        
+					        // 4. Filter for image files and ignore '.' and '..'
+					        foreach ($files as $file) {
+					            $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+					            if (in_array($ext, $formats)) {
+					                // 5. Output the HTML for each image
+					                echo '<div class="gallery-container">';
+					                echo '<img class="gallery-image" src="' . $dir . $file . '" alt="' . $file . '">';
+					                echo '</div>';
+					            }
+					        }
+					    } else {
+					        echo 'Directory not found.';
+					    }
+					 ?>
+				
 					<div class="spacer"></div>
 				</div>
 			</div>
